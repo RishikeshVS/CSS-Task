@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <div class="header">Header</div>
+        <div class="nav">Navigation Bar</div>
+        <div class="main">Main Content</div>
+        <div class="footer">Footer</div>
+    </div>
+    <style>
+        .main
+        {
+            display:flex;
+            flex-direction: column;
+            width:280px;
+            height:700px;
+            border:2px solid black;
+        }
+        .header,.footer
+        {
+            width:280px;
+            height:90px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .header
+        {
+            background-color: pink;
+        }
+        .footer
+        {
+            background-color: rgb(226, 138, 248);
+        }
+        .nav
+        {
+            width:280px;
+            display: flex;
+            justify-content: center;
+            background-color: purple;
+            color:white;
+        }
+        .main
+        {
+            height:250px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        body,html
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            height: 100%;
+        }
+    </style>
+</body>
+</html>

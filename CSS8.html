@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <div class="header">Header</div>
+        <div class="nav">Navigation Bar</div>
+        <div class="sub">
+            <span class="left"> Left Panel </span>
+            <span class="main2">Main Content</span>
+        </div>
+        <div class="footer">Footer</div>
+    </div>
+    <style>
+        .main
+        {
+            display:flex;
+            flex-direction: column;
+            width:300px;
+            border:2px solid black;
+        }
+        .header,.footer
+        {
+            width:300px;
+            height:60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .header
+        {
+            background-color: pink;
+        }
+        .footer
+        {
+            background-color: rgb(226, 138, 248);
+        }
+        .nav
+        {
+            width:300px;
+            height:35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: purple;
+            color:white;
+        }
+        body,html
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            height: 100%;
+        }
+        .sub
+        {
+            display: flex;
+            flex-direction: row;
+            height:150px;
+            width:300px;
+        }
+        .left
+        {
+            height:150px;
+            width:30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(241, 139, 156);
+            text-align: center;
+        }
+        .main2
+        {
+            height:150px;
+            width:70%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            text-align: center;
+        }
+    </style>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <div class="header">Header Section</div>
+        <div class="nav">Navigation Bar</div>
+        <div class="sub">
+            <span class="index"> Index </span>
+            <span class="content"> Content Section</span>
+        </div>
+        <div class="footer">Footer Section</div>
+    </div>
+    <style>
+        div,span
+        {
+            font-weight: bolder;
+        }
+        .main
+        {
+            display:flex;
+            flex-direction: column;
+            width:450px;
+            border:2px solid black;
+        }
+        .header,.nav
+        {
+            width:450px;
+            height:40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 2px solid black;
+        }
+        .footer
+        {
+            width:450px;
+            height:70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+       
+        body,html
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            height: 100%;
+        }
+        .sub
+        {
+            display: flex;
+            flex-direction: row;
+            height:150px;
+            width:450px;
+            border-bottom: 2px solid black;
+        }
+        .index
+        {
+            height:150px;
+            width:20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border-right: 2px solid black;
+        }
+        .content
+        {
+            height:150px;
+            width:80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+    </style>
+</body>
+</html>
